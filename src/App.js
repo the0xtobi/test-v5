@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import BookCreate from './components/BookCreate'
-import './App.css';
 
 function App() {
   const [books, setBooks] = useState([])
