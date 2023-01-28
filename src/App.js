@@ -5,12 +5,12 @@ import './App.css';
 function App() {
   const [books, setBooks] = useState([])
 
-  const handleCreateBook = () => {
+  const createBook = (title) => {
 
   }
   return (
     <div className="App">
-      <BookCreate onCreate={handleCreateBook} />
+      <BookCreate onCreate={createBook} />
     </div>
   );
 }
