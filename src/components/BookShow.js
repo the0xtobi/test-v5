@@ -1,7 +1,7 @@
-function BookShow(){
-    return(
+function BookShow({ book }) {
+    return (
         <div>
-
+            {book.title}
         </div>
     )
 }
