@@ -9,6 +9,7 @@ function App() {
     const updatedBooks = books.filter((book) => {
       return book.id !== id
     })
+    setBooks(updatedBooks)
   }
 
   const createBook = (title) => {
