@@ -5,6 +5,8 @@ import BookList from './components/BookList'
 function App() {
   const [books, setBooks] = useState([])
 
+  const deleteBookById(id) =
+
   const createBook = (title) => {
     const updatedBooks = [
       ...books, 
