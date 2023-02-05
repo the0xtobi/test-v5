@@ -11,7 +11,8 @@ function BookCreate({ onCreate }) {
     const handleSubmit = (event) => {
         event.preventDefault()
         onCreate(title)
-        setTitle('')  // resets input space to empty 
+        setTitle('')  // resets input space to empty right after calling the-
+        // above function 
     }
 
     return (
