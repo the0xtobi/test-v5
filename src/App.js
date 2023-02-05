@@ -2,6 +2,8 @@ import { useState } from 'react'
 import BookCreate from './components/BookCreate'
 import BookList from './components/BookList'
 
+// Good design is
+
 function App() {
   const [books, setBooks] = useState([])
 
