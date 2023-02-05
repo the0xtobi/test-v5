@@ -5,6 +5,7 @@ import BookList from './components/BookList'
 // Good design is defining your logic in the app component
 
 function App() {
+  // This state serves as our list
   const [books, setBooks] = useState([])
 
   // This function is resposible for book deletion
