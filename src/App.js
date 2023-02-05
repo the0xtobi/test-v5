@@ -13,7 +13,7 @@ function App() {
     setBooks(updatedBooks)
   }
 
-  // This function is called when the user
+  // This function is called when the user want to input/create a book
   const createBook = (title) => {
     const updatedBooks = [
       ...books,
