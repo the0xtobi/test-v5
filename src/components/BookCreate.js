@@ -7,10 +7,11 @@ function BookCreate({ onCreate }) {
         setTitle(event.target.value)
     }
 
+    // on submit we call the create book func
     const handleSubmit = (event) => {
         event.preventDefault()
         onCreate(title)
-        setTitle('')
+        setTitle('')  // resets input space to empty 
     }
 
     return (
