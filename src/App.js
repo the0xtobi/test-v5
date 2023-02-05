@@ -5,6 +5,7 @@ import BookList from './components/BookList'
 function App() {
   const [books, setBooks] = useState([])
 
+  // This function is resposible for book deletion
   const deleteBookById = (id) => {
     const updatedBooks = books.filter((book) => {
       return book.id !== id
