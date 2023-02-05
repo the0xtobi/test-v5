@@ -1,7 +1,7 @@
 import BookShow from './BookShow'
 
 function BookList({ books, onDelete }) {
-
+// BookList returns BookShow
     return (
         <div className='book-list'>
             {books.map((book) => {
