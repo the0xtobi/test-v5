@@ -2,7 +2,7 @@ import { useState } from 'react'
 import BookCreate from './components/BookCreate'
 import BookList from './components/BookList'
 
-// Good design is defining all you
+// Good design is defining your logic in the 
 
 function App() {
   const [books, setBooks] = useState([])
