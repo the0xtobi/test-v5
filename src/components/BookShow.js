@@ -12,7 +12,7 @@ function BookShow({ book, onDelete }) {
         setShowEdit(!showEdit)
     }
 
-    let content = <h3>{book.titile}</h3>
+    let content = <h3>{book.title}</h3>
     if (showEdit) {
         content = <BookEdit />
     }
