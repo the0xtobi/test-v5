@@ -13,7 +13,7 @@ function BookShow({ book, onDelete }) {
                 <button className='edit'>
                     Edit
                 </button>
-                <button className="delete" onClick={handleClick}>
+                <button className="delete" onClick={handleDeleteClick}>
                     Delete
                 </button>
             </div>
