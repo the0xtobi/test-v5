@@ -16,7 +16,7 @@ function App() {
       return book
     })
 
-    
+    setBooks(updatedBooks)
   }
 
   // This function is resposible for book deletion
