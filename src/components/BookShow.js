@@ -7,8 +7,8 @@ function BookShow({ book, onDelete }) {
         onDelete(book.id)
     }
 
-    const handleEditClick = () =>{
-
+    const handleEditClick = () => {
+        setShowEdit(!showEdit)
     }
 
     return (
