@@ -1,8 +1,8 @@
 function BookEdit(){
     return(
-        <div>
+        <form className='book-edit'>
 
-        </div>
+        </form>
     )
 }
 
