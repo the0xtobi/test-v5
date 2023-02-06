@@ -8,6 +8,10 @@ function App() {
   // This state serves as our list
   const [books, setBooks] = useState([])
 
+  const editBookById = (id, newTitle) =>{
+
+  }
+
   // This function is resposible for book deletion
   const deleteBookById = (id) => {
     const updatedBooks = books.filter((book) => {
