@@ -8,8 +8,13 @@ function App() {
   // This state serves as our list
   const [books, setBooks] = useState([])
 
-  const editBookById = (id, newTitle) =>{
-
+  const editBookById = (id, newTitle) => {
+    const updatedBooks = books.map((book) => {
+      if (book.id === id) {
+        return { ...book, title: newTitle }
+      }
+      return book
+    })
   }
 
   // This function is resposible for book deletion
