@@ -8,7 +8,7 @@ function App() {
   // This state serves as our list
   const [books, setBooks] = useState([])
 
-  // This is the func responsible for updating
+  // This is the func responsible for updating our value
   const editBookById = (id, newTitle) => {
     const updatedBooks = books.map((book) => {
       if (book.id === id) {
