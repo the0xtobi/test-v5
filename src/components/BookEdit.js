@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 function BookEdit({ book, onEdit }) {
-    // We need a state
+    // We need a state to store
     const [title, setTitle] = useState(book.title)
 
     const handleChange = (event) => {
