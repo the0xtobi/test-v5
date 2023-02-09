@@ -4,7 +4,7 @@ function BookEdit({ book, onEdit }) {
     // We need a state to store user's input
     const [title, setTitle] = useState(book.title)
 
-    // This records whatever is typed inthe
+    // This records whatever is typed in 
     const handleChange = (event) => {
         setTitle(event.target.value)
     }
