@@ -14,7 +14,7 @@ function BookShow({ book, onDelete, onEdit }) {
 
     // this will serve as the condition that determines what we see/ displayed
     let content = <h3>{book.title}</h3>  // initial value
-    if (showEdit) { //if showEdit is true, it displays book edit
+    if (showEdit) { //if showEdit is true, we update content it displays book edit
         content = <BookEdit onEdit={onEdit} book={book} />
     }
 
