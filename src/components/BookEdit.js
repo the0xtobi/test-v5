@@ -9,7 +9,7 @@ function BookEdit({ book, onEdit }) {
         setTitle(event.target.value)
     }
 
-    // the event.preventdefault
+    // the event.preventdefault prevents the form from
     const handleSubmit = (event) => {
         event.preventDefault()
         onEdit(book.id, title)
