@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function BookEdit({ book, onSubmit, showEdit }) {
+function BookEdit({ book, onSubmit }) {
     // We need a state to store user's input
     const [title, setTitle] = useState(book.title)
 
@@ -14,7 +14,6 @@ function BookEdit({ book, onSubmit, showEdit }) {
     const handleSubmit = (event) => {
         event.preventDefault()
         onSubmit(book.id, title)
-        
     }
 
     return (
