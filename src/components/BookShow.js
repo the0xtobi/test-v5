@@ -4,9 +4,9 @@ import BookEdit from './BookEdit'
 function BookShow({ book, onDelete, onEdit }) {
     const [showEdit, setShowEdit] = useState(false)
 
-    const handleDeleteClick = () => {
-        onDelete(book.id)
-    }
+    // const handleDeleteClick = () => {
+    //     onDelete(book.id)
+    // }
 
     const handleEditClick = () => {
         setShowEdit(!showEdit)
@@ -25,7 +25,7 @@ function BookShow({ book, onDelete, onEdit }) {
                 <button className='edit' onClick={handleEditClick}>
                     Edit
                 </button>
-                <button className="delete" onClick={handleDeleteClick}>
+                <button className="delete" onClick={onDelete(book.id)}>
                     Delete
                 </button>
             </div>
