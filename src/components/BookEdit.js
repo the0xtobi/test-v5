@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function BookEdit({ book, onEdit }) {
+function BookEdit({ book, onSubmit }) {
     // We need a state to store user's input
     const [title, setTitle] = useState(book.title)
 
