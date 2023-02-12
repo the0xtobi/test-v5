@@ -12,6 +12,11 @@ function BookShow({ book, onDelete, onEdit }) {
         setShowEdit(!showEdit)
     }
 
+    const handleSubmit = (id, newTitle) =>{
+        setShowEdit(false)
+        onEdit()
+    }
+
     // this will serve as the condition that determines what we see/ displayed
     let content = <h3>{book.title}</h3>  // initial value
     if (showEdit) { //if showEdit is true, we update content it displays book edit
