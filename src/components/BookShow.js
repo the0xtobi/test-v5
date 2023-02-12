@@ -25,7 +25,7 @@ function BookShow({ book, onDelete, onEdit }) {
                 <button className='edit' onClick={handleEditClick}>
                     Edit
                 </button>
-                <button className="delete" onClick={onDelete(book.id)}>
+                <button className="delete" onClick={()=> onDelete(book.id)}>
                     Delete
                 </button>
             </div>
