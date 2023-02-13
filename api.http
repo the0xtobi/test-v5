@@ -17,7 +17,7 @@ Content-Type: application/json
 ###
 
 PUT http://localhost:3001/books/1 HTTP/1.1
-Content-Type: application-application/json
+Content-Type: application/json
 
 {
     "title": "Cinderella"
