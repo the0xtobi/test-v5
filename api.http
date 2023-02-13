@@ -22,3 +22,8 @@ Content-Type: application/json
 {
     "title": "Cinderella"
 }
+
+###
+
+DELETE http://localhost:3001/books/1 HTTP/1.1
+Content-Type: application/json
