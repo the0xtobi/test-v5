@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import axios from 'axios'
 import BookCreate from './components/BookCreate'
 import BookList from './components/BookList'
 
@@ -30,10 +31,16 @@ function App() {
   }
 
   // This function is called when the user want to input/create a book
-  const createBook = (title) => {
+  const createBook = async (title) => {
+    const response = await axios.post('http://localhost:3001/books',
+      {
+        title: title
+      })
+      
     const updatedBooks = [
       ...books,
-      { id: Math.round(Math.random() * 9999), title: title }];
+      response.data
+    ]
     setBooks(updatedBooks)
   }
 
