@@ -9,8 +9,10 @@ function App() {
   // This state serves as our list
   const [books, setBooks] = useState([])
 
-  const fetchBooks = () => {
-    
+  const fetchBooks = async () => {
+    const response = await axios.get('http://localhost:3001/books')
+
+    setBooks(response.data)
   }
 
   // This is the func responsible for updating our value. We need to pick an id-
