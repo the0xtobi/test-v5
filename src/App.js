@@ -27,7 +27,7 @@ function App() {
 
     const updatedBooks = books.map((book) => {
       if (book.id === id) {
-        return { ...book, title: newTitle }
+        return { ...book, ...response.data }
       }
       return book
     })
