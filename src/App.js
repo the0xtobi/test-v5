@@ -21,8 +21,8 @@ function App() {
   // This is the func responsible for updating our value. We need to pick an id-
   // and if the id is true, we update the title with a new title
   const editBookById = async (id, newTitle) => {
-    const response = await axios.put(`http://localhost:3001/books/${id}`,{
-      title:newTitle
+    const response = await axios.put(`http://localhost:3001/books/${id}`, {
+      title: newTitle
     })
 
     const updatedBooks = books.map((book) => {
@@ -37,7 +37,8 @@ function App() {
 
   // This function is resposible for book deletion
   const deleteBookById = async (id) => {
-   const response = await axios.delete(`http://localhost/books/${id}`)
+    const response = await axios.delete(`http://localhost/books/${id}`)
+    
     const updatedBooks = books.filter((book) => {
       return book.id !== id
     })
