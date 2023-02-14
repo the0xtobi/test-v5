@@ -15,7 +15,9 @@ function App() {
     setBooks(response.data)
   }
 
-  
+  useEffect(() => {
+    fetchBooks()
+  }, [])
   // This is the func responsible for updating our value. We need to pick an id-
   // and if the id is true, we update the title with a new title
   const editBookById = (id, newTitle) => {
