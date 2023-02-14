@@ -20,7 +20,11 @@ function App() {
   }, [])
   // This is the func responsible for updating our value. We need to pick an id-
   // and if the id is true, we update the title with a new title
-  const editBookById = (id, newTitle) => {
+  const editBookById = async (id, newTitle) => {
+    const response = await axios.put(`http://localhost:3001/books/${id}`,{
+      title:newTitle
+    })
+
     const updatedBooks = books.map((book) => {
       if (book.id === id) {
         return { ...book, title: newTitle }
