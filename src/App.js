@@ -9,6 +9,10 @@ function App() {
   // This state serves as our list
   const [books, setBooks] = useState([])
 
+  const fetchBooks = () => {
+    
+  }
+
   // This is the func responsible for updating our value. We need to pick an id-
   // and if the id is true, we update the title with a new title
   const editBookById = (id, newTitle) => {
@@ -36,7 +40,7 @@ function App() {
       {
         title: title
       })
-      
+
     const updatedBooks = [
       ...books,
       response.data
