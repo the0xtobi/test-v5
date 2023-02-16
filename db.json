@@ -1,10 +1,6 @@
 {
   "books": [
     {
-      "title": "Ed, Edd and Eddy",
-      "id": 2
-    },
-    {
       "title": "Mulan",
       "id": 4
     },
