@@ -1,10 +1,6 @@
 {
   "books": [
     {
-      "title": "Mulan",
-      "id": 4
-    },
-    {
       "title": "Toy Story",
       "id": 7
     },
