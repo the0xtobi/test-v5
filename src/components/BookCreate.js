@@ -2,8 +2,8 @@ import { useState, useContext } from 'react'
 import BooksContext from '../context/books'
 
 function BookCreate() {
-    const { createBook } = useContext(BooksContext)
     const [title, setTitle] = useState('')
+    const { createBook } = useContext(BooksContext)
 
     const handleChange = (event) => {
         setTitle(event.target.value)
@@ -12,7 +12,7 @@ function BookCreate() {
     // on submit we call the create book func
     const handleSubmit = (event) => {
         event.preventDefault()
-        onCreate(title)
+        createBook(title)
         setTitle('')  // resets input space to empty right after calling the-
         // above function 
     }
