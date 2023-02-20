@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import BooksContext from '../context/books';
 import BookShow from './BookShow'
 
-function BookList({ books, onDelete, onEdit }) {
+function BookList({ books }) {
    const { books } = useContext(BooksContext)
 // BookList returns BookShow. It's mapped to display one of each book
 // dont forget to pass a key prop!
