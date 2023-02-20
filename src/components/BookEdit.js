@@ -1,8 +1,10 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
+import BooksContext from '../context/books'
 
 function BookEdit({ book, onSubmit }) {
     // We need a state to store user's input
     const [title, setTitle] = useState(book.title)
+    const { editBookById } = useContext(BooksContext)
 
     // This records whatever value is typed in the input box
     const handleChange = (event) => {
@@ -13,7 +15,8 @@ function BookEdit({ book, onSubmit }) {
     // default HTML way
     const handleSubmit = (event) => {
         event.preventDefault()
-        onSubmit(book.id, title)
+        editBookById(book.id, title)
+        onSubmit()
     }
 
     return (
