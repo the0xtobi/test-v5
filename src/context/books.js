@@ -18,16 +18,26 @@ function Provider({ children }) {
             title: newTitle
         })
 
+        const updatedBooks = books.map((book) => {
+            if (book.id === id) {
+                return { ...book, ...response.data }
+            }
+            return book
+        })
 
-
-
-        return (
-            <BooksContext.Provider value={value} >
-                {children}
-            </BooksContext.Provider>
-        )
+        setBooks(updatedBooks)
     }
 
+    
 
-    export { Provider };
-    export default BooksContext;
+
+    return (
+        <BooksContext.Provider value={value} >
+            {children}
+        </BooksContext.Provider>
+    )
+}
+
+
+export { Provider };
+export default BooksContext;

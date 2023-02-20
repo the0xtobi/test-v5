@@ -14,15 +14,7 @@ function App() {
   // and if the id is true, we update the title with a new title
   
 
-    const updatedBooks = books.map((book) => {
-      if (book.id === id) {
-        return { ...book, ...response.data }
-      }
-      return book
-    })
-
-    setBooks(updatedBooks)
-  }
+  
 
   // This function is resposible for book deletion
   const deleteBookById = async (id) => {
