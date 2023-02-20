@@ -51,13 +51,13 @@ function Provider({ children }) {
         setBooks(updatedBooks)
     }
 
-    const value = {{
+    const value = {
         books,
         fetchBooks,
         editBookById,
         deleteBookById,
         createBook
-    }}
+    }
 
 
     return (
