@@ -18,3 +18,7 @@ function Provider({ children }) {
         </BooksContext.Provider>
     )
 }
+
+
+export { Provider };
+export default BooksContext;
