@@ -17,28 +17,7 @@ function App() {
   
 
   // This function is resposible for book deletion
-  const deleteBookById = async (id) => {
-    const response = await axios.delete(`http://localhost:3001/books/${id}`)
-
-    const updatedBooks = books.filter((book) => {
-      return book.id !== id
-    })
-    setBooks(updatedBooks)
-  }
-
-  // This function is called when the user want to input/create a book
-  const createBook = async (title) => {
-    const response = await axios.post('http://localhost:3001/books',
-      {
-        title: title
-      })
-
-    const updatedBooks = [
-      ...books,
-      response.data
-    ]
-    setBooks(updatedBooks)
-  }
+  
 
   return (
     <div className="app">
