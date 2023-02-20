@@ -5,14 +5,7 @@ import BookList from './components/BookList'
 // Good design is defining your logic in the app component
 
 function App() {
-  // This state serves as our list
-  const [books, setBooks] = useState([])
-
-  const fetchBooks = async () => {
-    const response = await axios.get('http://localhost:3001/books')
-
-    setBooks(response.data)
-  }
+  
 
   useEffect(() => {
     fetchBooks()
