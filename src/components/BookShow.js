@@ -14,9 +14,8 @@ function BookShow({ book }) {
         setShowEdit(!showEdit)
     }
 
-    const handleSubmit = (id, newTitle) =>{
+    const handleSubmit = () =>{
         setShowEdit(false)
-        onEdit(id, newTitle)
     }
 
     // this will serve as the condition that determines what we see/ displayed
