@@ -1,10 +1,6 @@
 {
   "books": [
     {
-      "title": "batman",
-      "id": 12
-    },
-    {
       "title": "black panther",
       "id": 13
     },
