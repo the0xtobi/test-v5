@@ -25,7 +25,7 @@ function Provider({ children }) {
             return book
         })
 
-        setBooks(updatedBooks
+        setBooks(updatedBooks)
     }
 
     const deleteBookById = async (id) => {
