@@ -7,6 +7,7 @@ import BookList from './components/BookList'
 function App() {
   const { fetchBooks} = useContext(BooksContext)
 
+  //this calls our api
   useEffect(() => {
     fetchBooks()
   }, [])
